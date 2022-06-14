@@ -1,0 +1,21 @@
+.land_comp{
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 1em;
+  background-color: white;
+  h3{
+    text-transform: lowercase;
+    color: #3D3D3D;
+  }
+  p{
+    color: #4C4F55;
+  }
+  img{
+    width: 100%;
+  }
+}

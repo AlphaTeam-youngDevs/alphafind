@@ -1,0 +1,206 @@
+.form {
+  background-color: #ff9800;
+  padding: 1em;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  p{
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    a{
+      color: white;
+    }
+  }
+  .app {
+    border-radius: 5px;
+    padding: 2em;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 50vh;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+/* =========logo========= */
+.logo {
+  font-weight: 600;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+.find {
+  color: orange;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+/* =========sign In && Sign up=========== */
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.lock {
+  cursor: pointer;
+}
+.button button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  padding: 0.5em 0.6em;
+  background-color: transparent;
+}
+.button button:hover {
+  background-color: rgba(238, 209, 174, 0.644);
+}
+/* =======link======= */
+.link {
+  width: 100%;
+  display: flex;
+  column-gap: 1em;
+  row-gap: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.link button {
+  outline: none;
+
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center;
+  font-size: 1.2rem;
+  flex: 1;
+  padding: 0.6em;
+  font-weight: 600;
+  justify-content: flex-start;
+  border: none;
+}
+.google {
+  background-color: #fa6b6b;
+}
+.facebook {
+  background-color: rgb(16, 85, 153);
+}
+.face {
+  fill: white;
+}
+
+/* =======sigin component====== */
+.signin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6em;
+}
+.username,
+.pass {
+  outline: 1px solid rgb(218, 218, 218);
+  width: 100%;
+  display: flex;
+  height: 1.6em;
+  font-size: 1.4rem;
+  padding: 0 0 0 0.3em;
+  align-items: center;
+  border-radius: 2px;
+  background-color: rgba(240, 240, 240, 0.678);
+}
+.username input,
+.pass input {
+  height: 100%;
+  width: 100%;
+  margin-left: 0.5em;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-left: 1px solid rgb(218, 218, 218);
+  padding: 0.3em;
+}
+.pass {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  left: 90%;
+  cursor: pointer;
+  top: 50%;
+
+  transform: translateY(-45%);
+}
+.pass input {
+  padding: 0 3em 0 0.3em;
+}
+.app a {
+  color: dodgerblue;
+  text-decoration: none;
+  align-self: flex-end;
+}
+button[type="submit"] {
+  align-self: center;
+  width: 100%;
+  /* height: 2em; */
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #ff9800;
+  color: white;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 7px;
+}
+button[type="submit"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ========sign Up component======= */
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7em;
+}
+.signup .eye {
+  margin-left: 1em;
+}
+.signUp .pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.4em 0 0;
+}
+.signUp .pass input {
+  margin: 0%;
+  padding: 0 0 0 0.4em;
+  border: none;
+  border-right: 1px solid rgb(218, 218, 218);
+}
+.signUp .pass label {
+  padding: 0 0.2em;
+  margin-right: 0.2em;
+  border-right: 1px solid rgb(218, 218, 218);
+}
+input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0 1em 0 0;
+}
+.inf {
+  color: #fa6b6b;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
