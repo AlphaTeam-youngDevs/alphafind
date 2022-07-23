@@ -1,0 +1,163 @@
+.filter {
+  max-width: 420px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  // justify-content: center;
+  background-color: #ff9800;
+  padding: 2em 0em;
+  gap: 2em;
+  align-items: center;
+  flex-direction: column;
+  .nav {
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+    gap: 2em;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    button {
+      padding: 0.2em 0.56em;
+      border-radius: 12px;
+      background-color: #f3f8fe;
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+  .filterbody {
+    background-color: white;
+    width: 100%;
+    padding: 5em 2em;
+    border-radius: 52px 52px 0 0;
+    min-height: 83.6vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 1em;
+    input {
+      width: 100%;
+      padding: 0.3em 0.7em;
+      font-size: 1.1rem;
+      border: 1px solid #ff9800;
+      border-radius: 5px;
+      outline: none;
+    }
+    .money {
+      display: flex;
+      gap: 0.5em;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      h6 {
+        color: #4c4f55;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      .money_child {
+        width: 100%;
+        display: flex;
+        gap: 1em;
+        justify-content: space-between;
+        div {
+          border: 1px solid #ff9800;
+          padding: 0 0 0 0.1em;
+          border-radius: 5px;
+          overflow: hidden;
+          display: flex;
+          width: 100%;
+          gap: 1em;
+          background-color: #fffaeb;
+          label {
+            flex: 1;
+            padding: 0 0.4em;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+          input {
+            flex: 6;
+            border: none;
+            border-left: 1px solid #ff9800;
+            width: 5em;
+            border-radius: 0;
+            &::placeholder {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+    .amenity {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1em 0;
+      h5 {
+        font-size: 1.2rem;
+      }
+      ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        li {
+          display: flex;
+          align-items: center;
+          position: relative;
+          input[type="checkbox"] {
+            display: none;
+          }
+          input:checked ~ label {
+            &::after,
+            &::before {
+              display: block;
+              opacity: 1;
+            }
+          }
+          label {
+            margin-left: 3em;
+            &::after,
+            &::before {
+              background-color: #ff9800;
+              content: "";
+              height: 1em;
+              border-radius: 3px;
+              left: 5%;
+              top: 15%;
+              width: 1em;
+              position: absolute;
+              opacity: .4;
+            }
+            &::before {
+              background-color: transparent;
+              border: 1px solid #ff9800;
+              width: 1.3em;
+              left: 2.3%;
+              top: 4%;
+              border-radius: 3px;
+              height: 1.3em;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    button{
+      background-color: #ff9800;
+      font-size: 1.3rem;
+      outline: none;
+      border: none;
+      margin-top: 2em;
+      padding:.6em 1em;
+      color: #f3f8fe;
+      border-radius: 12px;
+    }
+  }
+}

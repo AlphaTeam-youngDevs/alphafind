@@ -1,0 +1,51 @@
+.appful {
+  width: 100;
+  overflow: hidden;
+  // background-color: #ebb513;
+  max-width: 420px;
+  // padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  .footer {
+    width: 100%;
+    max-width: 420px;
+    z-index: 3;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    border-top: 1px solid #ff9800;
+    gap: 1.4em;
+    font-size: 1.3rem;
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    justify-self: flex-end;
+    color: #ff9800;
+    .icon {
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .bell {
+      padding: 0%;
+      margin: 0%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        position: absolute;
+        color: white;
+        font-size: 0.7rem;
+        left: 60%;
+        top: -20%;
+        background-color: red;
+        padding: 0.05em 0.6em;
+        border-radius: 50%;
+      }
+    }
+  }
+}

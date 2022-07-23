@@ -1,0 +1,145 @@
+.bookNow {
+  width: 100%;
+  padding: 2em 1em;
+  display: flex;
+  max-width: 420px;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  .image_bookage {
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 15em;
+    border-radius: 20px;
+    .back_btn {
+      z-index: 400;
+      margin: 0.5em 0.8em;
+      padding: 0.3em 0.9em;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      color: black;
+      cursor: pointer;
+      background-color: #f3f8fe;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      top: 0%;
+      left: 0%;
+      object-fit: fill;
+      height: 100%;
+    }
+  }
+  .image_caro {
+    width: 90%;
+    background-color: #f3f8fe;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 0.3em;
+    padding: 0.5em 0.7em;
+    border-radius: 7px;
+    &::-webkit-scrollbar {
+      display: none;
+      background: transparent;
+    }
+    img {
+      cursor: pointer;
+      width: 3em;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  .descript {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    padding: 0.8em;
+    h3 {
+      font-weight: 300;
+      font-size: 1.4rem;
+      color: #181257;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 200;
+      color: #4c4f55;
+    }
+    .more {
+      display: flex;
+      width: 100%;
+      color: #181257;
+      font-size: 1rem;
+      align-items: center;
+      gap: 1em;
+      justify-content: center;
+      span {
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+      }
+    }
+  }
+  .amenities {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+    h3 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #181257;
+    }
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      li {
+        color: #181257;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1em;
+    .money {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1rem;
+      color: #181257;
+      font-weight: 800;
+      h6 {
+        font-size: 1.1rem;
+        color: #4c4f55;
+        font-weight: 200;
+      }
+    }
+    .bookNow_btn {
+      background-color: #ff9800;
+      color: #f3f8fe;
+      font-size: 1.1rem;
+      display: flex;
+      padding: 0 0.7em;
+      border-radius: 12px;
+      box-shadow: 1px 1px 10px #ff9800;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

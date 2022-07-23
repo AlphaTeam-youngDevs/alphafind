@@ -1,0 +1,32 @@
+.payment_info {
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid #ff9800;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  h3 {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.616);
+    justify-content: space-between;
+    span {
+      color: #181257;
+      font-weight: 700;
+    }
+  }
+}
+span {
+  .bookConfirm {
+    .con_btn {
+      align-items: center;
+      font-size: 1.2rem;
+    }
+  }
+}

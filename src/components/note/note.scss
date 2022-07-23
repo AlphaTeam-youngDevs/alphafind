@@ -1,0 +1,68 @@
+.note {
+  height: 100vh;
+  width: 100%;
+  max-width: 420px;
+  padding: 1em 0 0 0;
+  background-color: #ff9800;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  h4 {
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .back {
+    padding: 0 0.6em;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    .back_btn {
+      cursor: pointer;
+      color: black;
+      font-weight: 300;
+      padding: 0.4em 0.7em;
+      border-radius: 12px;
+      background-color: #f3f8fe;
+    }
+  }
+  .notification_side {
+    background-color: white;
+    width: 100%;
+    min-height: 90vh;
+    padding: 1em;
+    border-radius: 30px 30px 0 0;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+      background: transparent;
+    }
+    ul {
+      list-style: none;
+      gap: 1em;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      li {
+        justify-content: center;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        .text {
+          font-size: 0.9rem;
+        }
+        .icon {
+          // transform: scale(11);
+          font-size: 7rem;
+        }
+      }
+    }
+  }
+}

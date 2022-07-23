@@ -1,0 +1,65 @@
+.info {
+  padding: 0.5em 1.2em;
+  position: relative;
+  z-index: 10000;
+  top: -120%;
+  font-size: 0.9rem;
+  width: 70%;
+  max-width: 350px;
+  font-weight: 400;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.062);
+  visibility: hidden;
+  &.active {
+    position: fixed;
+    animation: upward 4s ease-in-out 1s forwards;
+  }
+ 
+  &::after {
+    content: "";
+    background-color: green;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0.3em;
+    height: 100%;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    color: green;
+    .warn {
+      font-size: 1.2rem;
+      &.x {
+        font-weight: 800;
+      }
+    }
+  }
+  &.danger{
+    .text{
+      color: red;
+    }
+   &::after{
+    background-color: red;
+   }
+  }
+}
+@keyframes upward {
+  0% {
+    visibility: visible;
+    top: -10%;
+  }
+  20% {
+    top: 5%;
+  }
+  80% {
+    top: 5%;
+  }
+  100% {
+    top: -120%;
+    visibility: hidden;
+  }
+}

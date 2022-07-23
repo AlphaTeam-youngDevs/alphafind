@@ -1,0 +1,53 @@
+.app-form {
+  background-color: white;
+  padding:2em 1em;
+  width: 100%;
+  // max-width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+  max-width: 400px;
+  border-radius: 12px;
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  button {
+    background-color: #ff9800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.3em .7em;
+    align-self: center;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: white;
+  }
+  span {
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color:#196FF0 ;
+  }
+  p{
+    color: black;
+    font-weight: 200;
+    text-align: left;
+  }
+  &.confirm{
+    h3{
+      align-self: center;
+    }
+    span{
+      align-self: center;
+    }
+  }
+}
